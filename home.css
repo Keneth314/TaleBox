@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+	/* font-size: 62.5%  */
+}
+
+.main-container{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+div h2{
+    margin-bottom: 28px;
+}
+
+.formCuentos{
+    font-size: 17px;
+}
+
+.container-input{
+    margin-bottom: 10px;
+}
+
+.formCuentos p{
+    font-weight: 600;
+    /* font-size: 18px; */
+}
+
+.formCuentos div label{
+    /* font-weight: 500; */
+    
+}
+
+.form-check-inline{
+    margin-bottom: 15px;
+}

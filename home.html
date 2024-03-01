@@ -12,6 +12,7 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="home.css">
+    <!-- <script src="node_modules/@google/generative-ai/dist/index.js"></script> -->
 </head>
 
 <body>
@@ -46,9 +47,9 @@
     <div class="container main-container">
         <!-- <div class="row"> -->
         <div>
-            <h2>¡Crea tu cuento! 📖</h2>
+            <h2>¡Crea tu cuentodsdd! 📖</h2>
         </div>
-        <form action="cuentos.html" class="formCuentos">
+        <form class="formCuentos">
             <div class="container-input">
                 <p>Tema:</p>
                 <div class="form-check form-check-inline">
@@ -69,9 +70,46 @@
                         Drama
                     </label>
                 </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tema" id="tema4">
+                    <label class="form-check-label" for="tema4">
+                        Ciencia
+                    </label>
+                </div>
             </div>
 
-            <div class="container-input">
+            <div class="container-input" id="personajes">
+                <p>Personajes:</p>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="personaje1">
+                    <label class="form-check-label" for="personaje1">
+                        Gato
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="personaje2">
+                    <label class="form-check-label" for="personaje2">
+                        Perro
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="personaje3">
+                    <label class="form-check-label" for="personaje3">
+                        Humano
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="personaje4">
+                    <label class="form-check-label" for="personaje4">
+                        Alienígena
+                    </label>
+                </div>
+                
+            </div>
+
+            <!-- Estilo de imagen -->
+            <!-- <div class="container-input">
                 <p>Estilo:</p>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="estilo" id="estilo1">
@@ -91,24 +129,24 @@
                         Fantasía
                     </label>
                 </div>
-            </div>
+            </div> -->
 
             <div class="container-input">
                 <p>Duración:</p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="duracion" id="duracion1">
+                    <input class="form-check-input" type="radio" name="duracion" id="duracion1" value="4">
                     <label class="form-check-label" for="duracion1">
                         Corto
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="duracion" id="duracion2">
+                    <input class="form-check-input" type="radio" name="duracion" id="duracion2" value="6">
                     <label class="form-check-label" for="duracion2">
                         Medio
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="duracion" id="duracion3">
+                    <input class="form-check-input" type="radio" name="duracion" id="duracion3" value="8">
                     <label class="form-check-label" for="duracion3">
                         Largo
                     </label>
@@ -120,19 +158,23 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Crear Cuento</button>
-            </div>
+
         </form>
+
+        <div class="col-auto">
+            <button class="btn btn-primary mb-3" id="btnCrearCuento">Crear Cuento</button>
+        </div>
         <!-- </div> -->
     </div>
 
+    <div class="container">
+        <h2>!Difruta tu cuento! 🤗</h2>
+        <p id="resultPrompt"></p>
 
+    </div>
 
-
-
-
-
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script type="module" src="home.js"></script>
 </body>
 
 </html>
